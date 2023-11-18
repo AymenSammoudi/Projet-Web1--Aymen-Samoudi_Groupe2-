@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Voiture de Luxe </title>
+    <link rel="stylesheet" href="../CSS/web.css">
+    <script src="../JS/carLuxe.js"></script>
+</head>
+<body>
+
+<header>
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+            <button type="button" class="btn" onclick="submitForm()">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="menu_toggle">
+        <span></span>
+    </div>
+
+    <div class="logo">
+        <p><span>car</span>LUXE</p>
+    </div>
+    <ul class="menu">
+        <li><a href="../index.html">Acceuil</a></li>
+        <li><a href="vehicules.html">Vehicules</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="login_btn"  onclick="openForm()">LOGIN</button>
+</header>
+
+<section id="contact-page">
+    <h1 class="section_title title">Contact</h1>
+    <div class="localisation_contact_div">
+        <div class="localisation">
+            <h3>Notre Adresse</h3>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12777.836679155349!2d10.0731547!3d36.8075155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fc41ab7e1b5bd62!2sESEN!5e0!3m2!1sfr!2stn!4v1673214308323!5m2!1sfr!2stn"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="form_contact">
+            <h3>Envoyer un message</h3>
+            <form action="#" method="post" action="form_contact.php">
+                <input type="text" placeholder="Nom" id="nom" required>
+                <input type="email" placeholder="Adresse Mail" id="contact-email" required>
+                <input type="text" placeholder="Objet" id="objet" required>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="button" value="Envoyer" onclick="submitContactForm()">
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <p>Copyright &copy; ESEN 2022-2023 -- Site réalisé par : Aymen Samoudi (L2 Groupe 2)</p>
+</footer>
+</body>
+</html>

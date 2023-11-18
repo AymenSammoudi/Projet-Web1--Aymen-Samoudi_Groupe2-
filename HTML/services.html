@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Voiture de Luxe </title>
+    <link rel="stylesheet" href="../CSS/web.css">
+    <script src="../JS/carLuxe.js"></script>
+</head>
+<body>
+
+<header>
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+            <button type="button" class="btn" onclick="submitForm()">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <div class="menu_toggle">
+        <span></span>
+    </div>
+
+    <div class="logo">
+        <p><span>car</span>LUXE</p>
+    </div>
+    <ul class="menu">
+        <li><a href="../index.html">Acceuil</a></li>
+        <li><a href="vehicules.html">Vehicules</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="login_btn" onclick="openForm()">LOGIN</button>
+</header>
+<section id="services">
+    <h1 class="section_title title">Nos Services</h1>
+    <div class="list_services">
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>
+                Service car à domicile
+            </h3>
+            <p>Vous avez besoin d'une voiture de location à votre arrivée à votre hôtel, résidence..le service Car à domicile vous offre la livraison gratuite à votre adresse dans la majorité des villes principales en Tunisie</p>
+            <a href="#" class="read_more">Lire Plus</a>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>
+                Location voiture de LUXE avec Chauffeur ou sans
+            </h3>
+            <p>Des voitures hautes gammes sont disponibles au parc de Clicar, vous assure un service VIP et irréprochable.</p>
+            <a href="#" class="read_more">Lire Plus</a>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>
+                LOCATION VOITURE LONGUE DURÉE
+            </h3>
+            <p>Location voiture Tunisie avec Clicar, les entreprises tunisiennes et étrangères bénéficient d'une offre</p>
+            <a href="#" class="read_more">Lire Plus</a>
+        </div>
+    </div>
+</section>
+
+   <!-- <h1 class="section_title">Nos Services</h1>-->
+    <div class="list_services">
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>
+                Réception du client à l'aéroport
+            </h3>
+            <p>Notre Agent sera à votre attente à l'aéroport sans frais supplémentaires et vous accompagnera à votre véhicule</p>
+            <a href="#" class="read_more">Lire Plus</a>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>
+                kilométrage illimité
+            </h3>
+            <p>Vous allez faire du trajet, pas d'inquiétude, chez Clicar le kilométrage est illimité, rien ne sera facturé.</p>
+            <a href="#" class="read_more">Lire Plus</a>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Assurances tous risques</h3>
+            <p>Consulter notre différent type d'assurance proposé, vous êtes toujours couvert.</p>
+            <a href="#" class="read_more">Lire Plus</a>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <p>Copyright &copy; ESEN 2022-2023 -- Site réalisé par : Aymen Samoudi (L2 Groupe 2)</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Voiture de Luxe </title>
+    <link rel="stylesheet" href="../CSS/web.css">
+    <script src="../JS/carLuxe.js"></script>
+</head>
+<body>
+
+<header>
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+            <button type="button" class="btn" onclick="submitForm()">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="menu_toggle">
+        <span></span>
+    </div>
+
+    <div class="logo">
+        <p><span>car</span>LUXE</p>
+    </div>
+    <ul class="menu">
+        <li><a href="../index.html">Acceuil</a></li>
+        <li><a href="vehicules.html">Vehicules</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="login_btn" onclick="openForm()">LOGIN</button>
+</header>
+
+<section id="cars">
+    <h1 class="section_title title">Nos vehicules</h1>
+    <div class="images">
+        <ul>
+            <li class="car">
+                <div>
+                    <img src="../images/Peugeot 508.png" height="287" width="430"/>
+                </div>
+                <span>Peugeot 508</span>
+                <span class="prix">250.000dt</span>
+                <a href="#">RÉSERVER MAINTENANT</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="../images/Mercedes Classe E.png" height="167" width="250"/>
+                </div>
+                <span>Mercedes Classe</span>
+                <span class="prix">500.000dt</span>
+                <a href="#">RÉSERVER MAINTENANT</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="../images/Polo Sedan.jpg" height="256" width="512"/>
+                </div>
+                <span>Polo Sedan</span>
+                <span class="prix">300.000dt</span>
+                <a href="#">RÉSERVER MAINTENANT</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="../images/ibiza-grand.png" alt="">
+                </div>
+                <span>ibiza-grand</span>
+                <span class="prix">120.000dt</span>
+                <a href="#">RÉSERVER MAINTENANT</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="../images/VOLKSWAGEN GOLF 7.png" height="287" width="430"/>
+                </div>
+                <span>VOLKSWAGEN GOLF 7</span>
+                <span class="prix">200.000dt</span>
+                <a href="#">RÉSERVER MAINTENANT</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="../images/CITROEN%20C3.png" alt="">
+                </div>
+                <span>CITROEN C3</span>
+                <span class="prix">80.000dt</span>
+                <a href="#">RÉSERVER MAINTENANT</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="../images/Citroen%20C4.png" alt="">
+                </div>
+                <span>Citroen C4</span>
+                <span class="prix">90.000dt</span>
+                <a href="#">RÉSERVER MAINTENANT</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="../images/BMW%20Série%203.png" alt="">
+                </div>
+                <span>BMW Série 3</span>
+                <span class="prix">140.000dt</span>
+                <a href="#">ACHETER MAINTENANT</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="../images/Suzuki%20Swift-BVA.jpg" alt="">
+                </div>
+                <span>Suzuki Swift-BVA</span>
+                <span class="prix">120.000dt</span>
+                <a href="#">RÉSERVER MAINTENANT</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="../images/Clio%204.png" alt="">
+                </div>
+                <span>Clio 4</span>
+                <span class="prix">110.000dt</span>
+                <a href="#">RÉSERVER MAINTENANT</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="../images/Clio%205.jpg" alt="">
+                </div>
+                <span>Clio 5</span>
+                <span class="prix">130.000dt</span>
+                <a href="#">RÉSERVER MAINTENANT</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="../images/hyundai-i20.jpg" alt="">
+                </div>
+                <span>hyundai-i20</span>
+                <span class="prix">120.000dt</span>
+                <a href="#">RÉSERVER MAINTENANT</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<footer>
+    <p>Copyright &copy; ESEN 2022-2023 -- Site réalisé par : Aymen Samoudi (L2 Groupe 2)</p>
+</footer>
+</body>
+</html>

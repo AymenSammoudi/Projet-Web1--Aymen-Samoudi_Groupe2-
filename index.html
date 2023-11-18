@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Voiture de Luxe </title>
+    <link rel="stylesheet" href="CSS/web.css">
+    <script src="JS/carLuxe.js"></script>
+</head>
+<body>
+
+<header>
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container" method="post" action="login_check.php">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required autofocus>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+            <button type="button" class="btn" onclick="submitForm()">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="menu_toggle">
+        <span></span>
+    </div>
+
+    <div class="logo">
+        <p><span>car</span>LUXE</p>
+    </div>
+    <ul class="menu">
+        <li><a href="#home">Acceuil</a></li>
+        <li><a href="HTML/vehicules.html">Vehicules</a></li>
+        <li><a href="HTML/services.html">Services</a></li>
+        <li><a href="HTML/contact.html">Contact</a></li>
+    </ul>
+    <button class="login_btn" onclick="openForm()">LOGIN</button>
+</header>
+
+<section id="home">
+    <div class="left">
+        <h1>Buy <span>Your Car</span> Cheaper From Us</h1>
+        <p>Vous Cherchez une Confiance un service avec zéro soucis ? vous étes au bon endroit.car luxe vous garantit un
+            esprit tranqille tout au long votre période de location</p>
+        <a href="#">Réservée</a>
+    </div>
+    <div class="right">
+        <img src="images/img1.png">
+    </div>
+</section>
+
+<section id="cars">
+    <h1 class="section_title">Nos vehicules</h1>
+    <div class="images">
+        <ul>
+            <li class="car">
+                <div>
+                    <img src="images/ibiza-grand.png" alt="">
+                </div>
+                <span>ibiza-grand</span>
+                <span class="prix">120.000DT</span>
+                <a href="#">RÉSERVER</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="images/Clio%205.jpg" alt="">
+                </div>
+                <span>clio 5</span>
+                <span class="prix">130.000dt</span>
+                <a href="#">RÉSERVER</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="images/Clio%204.png" alt="">
+                </div>
+                <span>clio 4</span>
+                <span class="prix">110.000dt</span>
+                <a href="#">RÉSERVER</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="images/Citroen%20C4.png" alt="">
+                </div>
+                <span>Citroen C4</span>
+                <span class="prix">90.000dt</span>
+                <a href="#">RÉSERVER</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="images/Mercedes%20Classe%20E.png" alt="">
+                </div>
+                <span>Mercedes Classe E</span>
+                <span class="prix">500.000dt</span>
+                <a href="#">RÉSERVER</a>
+            </li>
+            <li class="car">
+                <div>
+                    <img src="images/FIAT%20GRANDE%20PUNTO.png" alt="">
+                </div>
+                <span>FIAT GRANDE PUNTO</span>
+                <span class="prix">120.000dt</span>
+                <a href="#">RÉSERVER</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="services">
+    <h1 class="section_title">Nos Services</h1>
+    <div class="list_services">
+        <div class="service">
+            <i class="Services"></i>
+            <h3>
+                Service car à domicile
+            </h3>
+            <p>Vous avez besoin d'une voiture de location à votre arrivée à votre hôtel, résidence..le service Car à domicile vous offre la livraison gratuite à votre adresse dans la majorité des villes principales en Tunisie</p>
+            <a href="HTML/services.html" class="read_more">Lire Plus</a>
+        </div>
+        <div class="service">
+            <i class="Services"></i>
+            <h3>
+                Location voiture de LUXE avec Chauffeur ou sans
+            </h3>
+            <p>Des voitures hautes gammes sont disponibles au parc de Clicar, vous assure un service VIP et irréprochable.</p>
+            <a href="HTML/services.html" class="read_more">Lire Plus</a>
+        </div>
+        <div class="service">
+            <i class="Services"></i>
+            <h3>
+                LOCATION VOITURE LONGUE DURÉE
+            </h3>
+            <p>Location voiture Tunisie avec Clicar, les entreprises tunisiennes et étrangères bénéficient d'une offre</p>
+            <a href="HTML/services.html" class="read_more">Lire Plus</a>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <h1 class="section_title">Contact</h1>
+    <div class="localisation_contact_div">
+        <div class="localisation">
+            <h3>Notre Adresse</h3>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12777.836679155349!2d10.0731547!3d36.8075155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fc41ab7e1b5bd62!2sESEN!5e0!3m2!1sfr!2stn!4v1673214308323!5m2!1sfr!2stn"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="form_contact">
+            <h3>Envoyer un message</h3>
+            <form action="#" method="post" action="form_contact.php">
+                <input type="text" placeholder="Nom" id="nom" required>
+                <input type="email" placeholder="Adresse Mail" id="contact-email" required>
+                <input type="text" placeholder="Objet" id="objet" required>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="button" value="Envoyer" onclick="submitContactForm()">
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <p>Copyright &copy; ESEN 2022-2023 -- Site réalisé par : Aymen Samoudi (L2 Groupe 2)</p>
+</footer>
+</body>
+</html>
